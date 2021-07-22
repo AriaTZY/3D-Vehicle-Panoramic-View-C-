@@ -1,0 +1,43 @@
+if(Index == 0)
+  {
+     color = texture(ourTexture0, TexCoord);
+  }
+  else if(Index == 1)
+  {
+     color = texture(ourTexture1, TexCoord);
+  }
+  else if(Index == 2)
+  {
+     color = texture(ourTexture2, TexCoord);
+  }
+  else if(Index == 3)
+  {
+     color = texture(ourTexture3, TexCoord);
+  }
+  else
+  {
+     color = texture(ourTexture4, TexCoord);
+  }
+
+
+
+
+
+//corner的
+
+if (Index == 0)
+  {
+     color = mix(texture(ourTexture0, TexCoord0), texture(ourTexture1, TexCoord1), 0.3);
+  }
+  else if (Index == 1)
+  {
+     color = mix(texture(ourTexture1, TexCoord0), texture(ourTexture2, TexCoord1), 0.3);
+  }
+  else if (Index == 2)
+  {
+     color = mix(texture(ourTexture2, TexCoord0), texture(ourTexture3, TexCoord1), 0.3);
+  }
+  else if (Index == 3)
+  {
+     color = mix(texture(ourTexture3, TexCoord0), texture(ourTexture0, TexCoord1), 0.3);
+  }
